@@ -1,0 +1,40 @@
+# Fichiers Unity
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Aa]ssets/AssetStoreTools*
+/Assets/StreamingAssets.meta
+/Assets/Vuforia/StreamingAssets/*
+*.csproj
+*.sln
+*.suo
+*.unityproj
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+*.meta
+
+# Fichiers spécifiques à Vuforia (optionnel, selon ton usage)
+/Assets/Vuforia/Databases/*.xml
+/Assets/Vuforia/Databases/*.dat
+/Assets/Vuforia/Databases/*.meta
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+*.log.*
