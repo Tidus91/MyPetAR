@@ -41,9 +41,15 @@ public class DogController : MonoBehaviour
                 launchPoint.rotation
             );
 
+            // stocker qui a tiré
+            var pb = proj.GetComponent<ProjectileBehaviour>();
+            if (pb != null)
+                pb.shooterTag = this.gameObject.tag;  // "CatPlayer" ou "DogPlayer"
+
             Rigidbody rb = proj.GetComponent<Rigidbody>();
             if (rb != null)
                 rb.AddForce(launchPoint.forward * launchForce, ForceMode.VelocityChange);
+
         }
 
     }
