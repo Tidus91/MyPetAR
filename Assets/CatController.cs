@@ -41,6 +41,8 @@ public class CatController : MonoBehaviour
                 launchPoint.rotation
             );
 
+            proj.transform.localScale = Vector3.one * 20f; 
+
             // stocker qui a tiré
             var pb = proj.GetComponent<ProjectileBehaviour>();
             if (pb != null)

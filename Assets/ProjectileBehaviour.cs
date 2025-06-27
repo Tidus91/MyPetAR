@@ -2,8 +2,14 @@ using UnityEngine;
 
 public class ProjectileBehaviour : MonoBehaviour
 {
-    [HideInInspector]
     public string shooterTag;    // le tag de celui qui tire (ex: "CatTag")
+
+    public float lifetime = 3f;
+
+    void Start()
+    {
+        Destroy(gameObject, lifetime);
+    }
 
     void OnTriggerEnter(Collider other)
     {
