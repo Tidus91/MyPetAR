@@ -9,7 +9,7 @@ public class DogController : MonoBehaviour
 
     public GameObject projectilePrefab;
     public Transform launchPoint;
-    public float launchForce = 5f;
+    public float launchForce = 50f;
 
     // Liste des triggers d’emote (à personnaliser)
     private readonly string[] emoteTriggers = {

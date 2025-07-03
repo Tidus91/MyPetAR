@@ -14701,4 +14701,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shooterTag: 
-  lifetime: 3
+  lifetime: 15

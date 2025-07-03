@@ -337,7 +337,7 @@ Transform:
   m_GameObject: {fileID: 166670456}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.022, y: 0.02, z: 0.184}
+  m_LocalPosition: {x: -0.029, y: 0.02, z: 0.282}
   m_LocalScale: {x: 0.002, y: 0.002, z: 0.002}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -815,6 +815,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.0998
       objectReference: {fileID: 0}
+    - target: {fileID: 8225399370491780667, guid: 076879464bd682945aa7cd31ae139a36,
+        type: 3}
+      propertyPath: m_TagString
+      value: CatTag
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1071,7 +1076,7 @@ GameObject:
   - component: {fileID: 880614885}
   - component: {fileID: 880614888}
   - component: {fileID: 880614887}
-  - component: {fileID: 880614886}
+  - component: {fileID: 880614889}
   m_Layer: 0
   m_Name: ImageTarget(poisson)
   m_TagString: Untagged
@@ -1094,25 +1099,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 280859065}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &880614886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 880614884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 880614888}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: imagepoison
-  mDatasetName: Vuforia/project2025DB.xml
-  mCastedBehaviour: {fileID: 880614888}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &880614887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1183,7 +1169,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 880614886}
+  mPreview: {fileID: 880614889}
+--- !u!114 &880614889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880614884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 880614888}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: imagepoison
+  mDatasetName: Vuforia/project2025DB.xml
+  mCastedBehaviour: {fileID: 880614888}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &938140632
 GameObject:
   m_ObjectHideFlags: 0
@@ -1360,7 +1365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
+  StatusFilter: 0
   UsePoseSmoothing: 0
   AnimationCurve:
     serializedVersion: 2
@@ -1554,6 +1559,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: DogTag
       objectReference: {fileID: 0}
+    - target: {fileID: 8422892626600285520, guid: 214e08cd5e5d74c458e2a81b7ec2c84c,
+        type: 3}
+      propertyPath: m_TagString
+      value: DogTag
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1612,7 +1622,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 1687598184364201055, guid: 261a483cfee3848f1a62987e4cf008f5,
     type: 3}
   launchPoint: {fileID: 1984408817}
-  launchForce: 50
+  launchForce: 250
 --- !u!82 &1038013082
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2118,7 +2128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
+  StatusFilter: 0
   UsePoseSmoothing: 0
   AnimationCurve:
     serializedVersion: 2
@@ -2334,7 +2344,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 6011594137007624999, guid: 0318bb82842ef4167b45044d69119449,
     type: 3}
   launchPoint: {fileID: 166670457}
-  launchForce: 50
+  launchForce: 250
 --- !u!114 &1633362443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2683,7 +2693,7 @@ GameObject:
   - component: {fileID: 1985299800}
   - component: {fileID: 1985299803}
   - component: {fileID: 1985299802}
-  - component: {fileID: 1985299801}
+  - component: {fileID: 1985299804}
   m_Layer: 0
   m_Name: ImageTarget(os)
   m_TagString: Untagged
@@ -2706,25 +2716,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 280859065}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1985299801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1985299799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1985299803}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: os-de-jambon
-  mDatasetName: Vuforia/project2025DB.xml
-  mCastedBehaviour: {fileID: 1985299803}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1985299802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2795,7 +2786,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1985299801}
+  mPreview: {fileID: 1985299804}
+--- !u!114 &1985299804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985299799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1985299803}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: os-de-jambon
+  mDatasetName: Vuforia/project2025DB.xml
+  mCastedBehaviour: {fileID: 1985299803}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &2061031652
 GameObject:
   m_ObjectHideFlags: 0

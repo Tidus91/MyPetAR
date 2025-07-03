@@ -14,6 +14,7 @@ public class Damageable : MonoBehaviour
     // Si utilisation de Is Trigger = true sur le collider
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log($"Projectile hit: {other.gameObject.name} (tag={other.tag})");
         if (other.CompareTag("Projectile"))
         {
             TakeDamage(1);

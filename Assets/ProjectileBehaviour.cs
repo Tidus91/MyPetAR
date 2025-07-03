@@ -4,7 +4,7 @@ public class ProjectileBehaviour : MonoBehaviour
 {
     public string shooterTag;    // le tag de celui qui tire (ex: "CatTag")
 
-    public float lifetime = 3f;
+    public float lifetime = 15f;
 
     void Start()
     {

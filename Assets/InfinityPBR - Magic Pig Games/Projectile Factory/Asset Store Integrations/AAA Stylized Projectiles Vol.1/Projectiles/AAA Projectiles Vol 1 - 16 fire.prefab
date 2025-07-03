@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shooterTag: 
-  lifetime: 3
+  lifetime: 15
 --- !u!1 &2596656880786402739
 GameObject:
   m_ObjectHideFlags: 0
